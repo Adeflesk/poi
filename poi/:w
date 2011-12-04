@@ -1,0 +1,5 @@
+%h1 Edit Client
+%p
+  -semantic_form_for [:admin, @client] do |f|
+    =f.inputs
+    =f.buttons

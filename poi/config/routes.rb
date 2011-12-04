@@ -1,4 +1,17 @@
 Poi::Application.routes.draw do
+
+  get "clients/index"
+
+  devise_for :users
+
+  namespace "admin" do 
+    root :to => "home#index"
+    resources :projects
+    resources :clients
+    resources :tasks
+    resources :invoices
+    resources :journal_entries
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +61,7 @@ Poi::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+    root :to => 'clients#index'
 
   # See how all your routes lay out with "rake routes"
 

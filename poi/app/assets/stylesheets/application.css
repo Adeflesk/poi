@@ -4,4 +4,27 @@
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *= require_self
  *= require_tree . 
+ *= require formtastic
 */
+
+.menu{
+   position:absolute;
+   top:32px;
+   right:32px;
+ }
+
+ .menu a{
+   font_size:1.4em;
+   text_decoration:none;
+   colour:#888888;
+ }
+
+ .menu ul li{
+   list_style:none;
+   margin-right:12px;
+ }
+
+ .menu li{
+   display:inline;
+ }
+
