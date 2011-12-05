@@ -13,8 +13,14 @@ gem 'will_paginate'
 gem 'devise'
 
 group :testing do 
+  gem "minitest"
   gem "rspec"
   gem "rspec-rails"
+  gem "autotest-standalone"
+  gem "autotest-rails"
+  gem "mocha"
+  gem "shoulda"
+  gem "factory_girl_rails"
 end
 
 group :development do 

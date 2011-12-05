@@ -6,5 +6,7 @@ class RenameDescriptionOnJournalEntries < ActiveRecord::Migration
   end
 
   def down
+change_table :journal_entries do |t|
+      t.rename :description, :decription
   end
 end
