@@ -1,0 +1,8 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+<%20.times do |i|%>
+client<%=i%>:
+  name: Rob
+  email: <%=i%>@tekpub.com
+<%end%>
+
+
